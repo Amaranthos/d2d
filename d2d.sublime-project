@@ -1,0 +1,315 @@
+{
+	"settings": {
+		"include_paths": [
+			"E:\\games-d\\d2d\\source\\",
+			"C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\derelict-gl3-1.0.23\\derelict-gl3\\source\\",
+			"C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\derelict-util-2.0.6\\derelict-util\\source\\",
+			"C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\derelict-sdl2-2.1.4\\derelict-sdl2\\source\\",
+			"C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\dlib-0.11.1\\dlib",
+			"C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\gl3n-1.3.1\\gl3n"
+		]
+	},
+	"folders": [
+		{
+			"follow_symlinks": true,
+			"name": "derelict-sdl2",
+			"path": "C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\derelict-sdl2-2.1.4\\derelict-sdl2\\",
+			"folder_exclude_patterns": [
+				".dub"
+			]
+		},
+		{
+			"follow_symlinks": true,
+			"name": "d2d",
+			"path": "E:\\games-d\\d2d\\",
+			"folder_exclude_patterns": [
+				".dub"
+			]
+		},
+		{
+			"follow_symlinks": true,
+			"name": "derelict-util",
+			"path": "C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\derelict-util-2.0.6\\derelict-util\\",
+			"folder_exclude_patterns": [
+				".dub"
+			]
+		},
+		{
+			"follow_symlinks": true,
+			"name": "dlib",
+			"path": "C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\dlib-0.11.1\\dlib\\",
+			"folder_exclude_patterns": [
+				".dub"
+			]
+		},
+		{
+			"follow_symlinks": true,
+			"name": "gl3n",
+			"path": "C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\gl3n-1.3.1\\gl3n\\",
+			"folder_exclude_patterns": [
+				".dub"
+			]
+		},
+		{
+			"follow_symlinks": true,
+			"name": "derelict-gl3",
+			"path": "C:\\Users\\joshu\\AppData\\Roaming\\dub\\packages\\derelict-gl3-1.0.23\\derelict-gl3\\",
+			"folder_exclude_patterns": [
+				".dub"
+			]
+		}
+	],
+	"build_systems": [
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build debug",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=debug",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=debug",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build release",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=release",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=release",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build release-debug",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=release-debug",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=release-debug",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build release-nobounds",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=release-nobounds",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=release-nobounds",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build docs",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=docs",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=docs",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build ddox",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=ddox",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=ddox",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build profile",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=profile",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=profile",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build profile-gc",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=profile-gc",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=profile-gc",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build cov",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=cov",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=cov",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+)\\,([0-9]+)\\)\\:() (.*)$",
+			"name": "DUB build unittest-cov",
+			"variants": [
+				{
+					"name": "Run",
+					"cmd": [
+						"dub",
+						"run",
+						"--build=unittest-cov",
+						"--arch=x86",
+						"--compiler=dmd"
+					]
+				}
+			],
+			"cmd": [
+				"dub",
+				"build",
+				"--build=unittest-cov",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d"
+		},
+		{
+			"name": "DUB test",
+			"cmd": [
+				"dub",
+				"test",
+				"--arch=x86",
+				"--compiler=dmd"
+			],
+			"working_dir": "E:\\games-d\\d2d",
+			"file_regex": "^(.+)\\(([0-9]+)\\)\\:() (.*)$"
+		}
+	]
+}

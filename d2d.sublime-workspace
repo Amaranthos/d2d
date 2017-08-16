@@ -1,0 +1,1604 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fr",
+				"fragColour"
+			],
+			[
+				"tim",
+				"timeLoc"
+			],
+			[
+				"s",
+				"shader"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"ver",
+				"verts"
+			],
+			[
+				"ve",
+				"Vertex"
+			],
+			[
+				"com",
+				"compileShader"
+			],
+			[
+				"comp",
+				"compile"
+			],
+			[
+				"sp",
+				"sprite"
+			],
+			[
+				"de",
+				"debugm\tdebug(module) { … }"
+			],
+			[
+				"fat",
+				"fatalError"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"l",
+				"loop"
+			],
+			[
+				"S",
+				"singleton"
+			],
+			[
+				"GL_CU",
+				"GLFW_CURSOR"
+			],
+			[
+				"no",
+				"normals"
+			],
+			[
+				"tem",
+				"temp_verts"
+			],
+			[
+				"uvIn",
+				"uvIndices"
+			],
+			[
+				"wr",
+				"writefln"
+			],
+			[
+				"vert",
+				"vertIndices"
+			],
+			[
+				"uvi",
+				"uvIndices"
+			],
+			[
+				"fom",
+				"formattedRead"
+			],
+			[
+				"form",
+				"formattedRead"
+			],
+			[
+				"for",
+				"formattedRead"
+			],
+			[
+				"str",
+				"strip"
+			],
+			[
+				"loa",
+				"loadOBJ"
+			],
+			[
+				"d",
+				"dT"
+			],
+			[
+				"wri",
+				"writefln"
+			],
+			[
+				"v",
+				"vertical"
+			],
+			[
+				"ho",
+				"horizontal"
+			],
+			[
+				"gl",
+				"glfwGetTIme"
+			],
+			[
+				"glf",
+				"glfwGetMousePos"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"FOU",
+				"FOURCC_DXT5"
+			],
+			[
+				"FOR",
+				"format"
+			],
+			[
+				"dat",
+				"dataSize"
+			],
+			[
+				"da",
+				"dataSize"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"fo",
+				"fourCC"
+			],
+			[
+				"hea",
+				"headerSize"
+			],
+			[
+				"uv",
+				"uvs"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"siz",
+				"size"
+			],
+			[
+				"si",
+				"size"
+			],
+			[
+				"ima",
+				"imageSize"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"raw",
+				"rawRead"
+			],
+			[
+				"wrt",
+				"writeln"
+			],
+			[
+				"lo",
+				"loadBMP"
+			],
+			[
+				"co",
+				"colour"
+			],
+			[
+				"proj",
+				"projection"
+			],
+			[
+				"pro",
+				"program"
+			],
+			[
+				"mv",
+				"mvpID"
+			],
+			[
+				"pr",
+				"program"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ma",
+				"mat4"
+			],
+			[
+				"fra",
+				"fragPath"
+			],
+			[
+				"Load",
+				"loadShaders"
+			],
+			[
+				"ch",
+				"checkProgam"
+			],
+			[
+				"to",
+				"toStringz"
+			],
+			[
+				"load",
+				"loadShaderSource"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"GLFW",
+				"GLFW_OPENGL_PROFILE"
+			],
+			[
+				"GLF",
+				"GLFW"
+			],
+			[
+				"wtr",
+				"writefln"
+			],
+			[
+				"GL_TEXT",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"IL",
+				"IL_IMAGE_WIDTH"
+			],
+			[
+				"w",
+				"writefln"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"glBin",
+				"glBindBuffer"
+			],
+			[
+				"GL_TE",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"glBind",
+				"glBindTexture"
+			],
+			[
+				"vec",
+				"vec3"
+			],
+			[
+				"std",
+				"stdio"
+			],
+			[
+				"read",
+				"readText"
+			],
+			[
+				"out",
+				"outColour"
+			],
+			[
+				"vertS",
+				"vertSource"
+			],
+			[
+				"Gl",
+				"GLfloat"
+			],
+			[
+				"sha",
+				"shaderProgram"
+			],
+			[
+				"su",
+				"shaderSuccess"
+			],
+			[
+				"H",
+				"HEIGHT"
+			],
+			[
+				"scre",
+				"screenHeight"
+			],
+			[
+				"sc",
+				"screenWidth"
+			],
+			[
+				"Der",
+				"DerelictGL3"
+			],
+			[
+				"W",
+				"WIDTH"
+			],
+			[
+				"glfw",
+				"glfwWindowHint"
+			],
+			[
+				"sf",
+				"sfVideoMode"
+			],
+			[
+				"c",
+				"createTestHTTPServerResponse"
+			],
+			[
+				"Wid",
+				"WIDTH_SCALE"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"b",
+				"bcrypt"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"er",
+				"error"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"ex",
+				"existingUser"
+			],
+			[
+				"use",
+				"userSchema"
+			],
+			[
+				"mo",
+				"mongoose"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"fle",
+				"flex-wrap"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"act",
+				"action\tReact: class component"
+			],
+			[
+				"auth",
+				"authd"
+			],
+			[
+				"map",
+				"mapStateToProps"
+			],
+			[
+				"Com",
+				"ComposedComponent"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"Rout",
+				"Route"
+			],
+			[
+				"na",
+				"nav"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"red",
+				"reducers"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"test",
+				"test\tRedux: reducer test"
+			],
+			[
+				"tes",
+				"test\tRedux: reducer test"
+			],
+			[
+				"acti",
+				"actions"
+			],
+			[
+				"m",
+				"mapdispatch\tReact: class component"
+			],
+			[
+				"comm",
+				"comments"
+			],
+			[
+				"Sa",
+				"SAVE_COMMENT"
+			],
+			[
+				"comme",
+				"comment"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"bt",
+				"btn-secondary"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"va",
+				"values"
+			],
+			[
+				"C",
+				"CREATE_POST"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"clas",
+				"className"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "open r",
+		"selected_items":
+		[
+			[
+				"open r",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"d",
+				"Set Syntax: D"
+			],
+			[
+				"res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"resour",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"gls",
+				"Set Syntax: GLSL"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"resou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"bookm",
+				"Bookmarks: Clear All"
+			],
+			[
+				"toggle",
+				"Bookmarks: Toggle"
+			],
+			[
+				"clo",
+				"Project: Close"
+			],
+			[
+				"resoure",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add fol",
+				"Project: Add Folder"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"rest",
+				"RESTer: HTTP Request"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"resv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"re ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"rv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"spac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"inde",
+				"Indent JSON"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snippt",
+				"Snippet: Prototype"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"sav",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"cl",
+				"Project: Close"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"fold",
+				"Fold Comments"
+			],
+			[
+				"save ",
+				"Project: Save As"
+			],
+			[
+				"tog",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ind",
+				"Indent XML"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"dcd",
+				"DKit: Restart DCD Autocompletion Server"
+			],
+			[
+				"sub",
+				"sublime-d: Format Code"
+			],
+			[
+				"got",
+				"sublime-d: Go To Definition"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"GOTO",
+				"DKit: Goto Definition"
+			],
+			[
+				"REST",
+				"DKit: Restart DCD Autocompletion Server"
+			],
+			[
+				"CREATE",
+				"DKit: Create Project From DUB Package File"
+			],
+			[
+				"DUB",
+				"DKit: Create DUB Package File"
+			],
+			[
+				"UpDATE",
+				"DKit: Update Import Paths"
+			],
+			[
+				"",
+				"ASCII Decorator: Default Font"
+			],
+			[
+				"asc",
+				"ASCII Decorator: Font Selector"
+			],
+			[
+				"markdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"ips",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"bui",
+				"Build: Cancel"
+			],
+			[
+				"ad",
+				"Project: Add Folder"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"lor",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"toggle m",
+				"View: Toggle Menu"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 450.0
+	},
+	"console":
+	{
+		"height": 301.0,
+		"history":
+		[
+			"view.command_history(0)",
+			"view.command_history(2)",
+			"view.command_history(1)",
+			"view.command_history(0)",
+			"view.command_history(3)",
+			"view.command_history(0)",
+			"view.command_history()",
+			"dub upgrade",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/E/games-d/zombie/.gitignore",
+		"/E/2dd/source/colour.d",
+		"/E/2dd/assets/sprite.frag",
+		"/E/2dd/assets/sprite.vert",
+		"/E/2dd/source/settings.d",
+		"/E/2dd/source/vertex.d",
+		"/E/2dd/source/kernal.d",
+		"/E/2dd/source/shader.d",
+		"/E/2dd/source/sprite.d",
+		"/E/2dd/source/app.d",
+		"/E/2dd/source/errors.d",
+		"/E/2dd/source/game.d",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/switch.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/case.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/class.sublime-snippet",
+		"/E/2dd/source/templates/singleton.d",
+		"/E/2dd/source/class.d",
+		"/E/2dd/dub.sdl",
+		"/E/open-gl-playground/opengl-tut/assets/simple.vert",
+		"/E/open-gl-playground/opengl-tut/assets/suzanne.obj",
+		"/E/open-gl-playground/opengl-tut/assets/cube.obj",
+		"/E/open-gl-playground/opengl-tut/source/controls.d",
+		"/E/open-gl-playground/opengl-tut/source/constants.d",
+		"/E/open-gl-playground/opengl-tut/assets/simple.frag",
+		"/E/open-gl-playground/opengl-tut/dub.sdl",
+		"/E/open-gl-playground/modern/source/shader.d",
+		"/E/open-gl-playground/modern/source/main.d",
+		"/E/open-gl-playground/modern/dub.sdl",
+		"/E/open-gl-playground/java-eng/dub.sdl",
+		"/E/open-gl-playground/cme/dub.sdl",
+		"/E/open-gl-playground/modern/assets/shaders/core.frag",
+		"/F/Steam/steamapps/appmanifest_20.acf",
+		"/E/open-gl-playground/modern/assets/shaders/core.vert",
+		"/C/Users/joshu/AppData/Local/Temp/7zO023EE110/texture.d",
+		"/C/Users/joshu/AppData/Local/Temp/7zO023CB913/image.d",
+		"/E/open-gl-playground/modern/shaders/core.vert",
+		"/E/open-gl-playground/modern/shaders/core.frag",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/main.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/E/open-gl-playground/java-eng/source/renderEngine/DisplayManager.d",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/method.sublime-snippet",
+		"/E/open-gl-playground/cme/source/app.d",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/if.sublime-snippet",
+		"/C/Users/joshu/AppData/Local/Temp/7zO0DC386CA/blendmode.di",
+		"/E/open-gl-playground/cme/.gitignore",
+		"/E/joshsDeng/source/app.d",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/while.sublime-snippet",
+		"/E/etherium/mine.sh",
+		"/E/etherium/mine.bat",
+		"/E/blogd-rest/source/app.d",
+		"/C/Users/joshu/AppData/Roaming/Ethereum/keystore/UTC--2017-05-02T13-40-19.983489900Z--81fc40c1f5e52db40f4500a96418c828380074e1",
+		"/E/etherium/qtminer/qt.conf",
+		"/C/Program Files/Cloud Imperium Games/Patcher/config/Cookies",
+		"/C/Users/joshu/AppData/Local/Temp/7zOC1FB8AA6/README.md",
+		"/E/etherium/eth-proxy/eth-proxy.conf",
+		"/E/blogd-rest/dub.sdl",
+		"/E/blogd-rest/source/blogd/rest/restapi.d",
+		"/E/blogd-rest/source/blogd/rest/irestapi.d",
+		"/E/blogd-rest/source/blogd/data/models/post.d",
+		"/C/Users/joshu/AppData/Local/4A Games/Metro Last Light/110000104aff86d/user.cfg",
+		"/F/Steam/steamapps/common/Metro Last Light Redux/dxgi.ini",
+		"/C/Users/joshu/Downloads/SpecialK-sk_0_8_12-374c6c1a2733eac42b1ca9b816b4824c599c5948/SpecialK-sk_0_8_12-374c6c1a2733eac42b1ca9b816b4824c599c5948/SpecialK.def",
+		"/C/Users/joshu/AppData/Local/Temp/Temp1_SpecialK-sk_0_8_12-374c6c1a2733eac42b1ca9b816b4824c599c5948.zip/SpecialK-sk_0_8_12-374c6c1a2733eac42b1ca9b816b4824c599c5948/README.md",
+		"/E/blogd-rest/.travis.yml",
+		"/E/vibe-playground/unit-threaded-vibe/source/app.d",
+		"/C/Users/joshu/AppData/Roaming/Factorio/blueprint-storage.dat",
+		"/E/blogd-rest/bin/ut.d",
+		"/E/blogd-rest/source/blogd/data/repositories/irepository.d",
+		"/E/blogd-rest/source/blogd/data/repositories/ipostrepository.d",
+		"/E/blogd-rest/source/secret.d",
+		"/E/blogd-rest/.dub/version.json",
+		"/E/blogd-rest/.dub/dub.json",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/unittest.sublime-snippet",
+		"/E/blogd-rest/.gitignore",
+		"/E/blogd-rest/dub.selections.json",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/D/Snippets/struct.sublime-snippet",
+		"/E/blogd-rest/blogd-rest.lib",
+		"/E/unity-playground/HexGrid/Assets/scripts/HexMap.cs",
+		"/E/unity-playground/HexGrid/Assets/scripts/Hex.cs",
+		"/E/unity-playground/HexGrid/hex-grid.sublime-project",
+		"/E/unity-playground/HexGrid/10",
+		"/E/unity-playground/HexGrid/0",
+		"/C/Program Files/ethminer/ethmine.bat",
+		"/C/Users/joshu/Documents/Curse/Minecraft/Install/launcher_profiles.json",
+		"/E/blogd-spaces/dub.sdl",
+		"/E/blogd-spaces/dub.selections.json",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/User/RESTer.sublime-settings",
+		"/E/react-playground/redux-simple-starter-blog/.gitignore",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_wrap.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/redux_action_test.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/redux_reducer.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/redux_reducer_test.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_this-state.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_this-props.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_shouldComponentUpdate.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_setState.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_render.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_redux_form.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_propTypes.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_redux_action.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_map_state_props.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_map_dispatch_props.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_getInitialState.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_getDefaultProps.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_findDOMNode.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_container.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_componentDidMount.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_component_test_it.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_component_test_describe.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_component.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_component_hoc.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_component_test.sublime-snippet",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/Babel Snippets/react_component_test_beforeEach.sublime-snippet",
+		"/E/react-playground/auth/server/index.js",
+		"/E/react-playground/auth/server/router.js",
+		"/E/react-playground/auth/server/controllers/authentication.js",
+		"/E/react-playground/auth/server/services/passport.js",
+		"/E/react-playground/auth/server/config.js",
+		"/E/react-playground/auth/server/.gitignore",
+		"/E/react-playground/auth/server/models/user.js",
+		"/E/react-playground/auth/server/package.json",
+		"/C/Users/joshu/AppData/Roaming/Sublime Text 3/Packages/User/DKit.sublime-settings",
+		"/E/react-playground/redux-simple-starter-middle/src/middleware/async.js",
+		"/E/react-playground/redux-simple-starter-middle/src/reducers/users.js",
+		"/E/react-playground/redux-simple-starter-middle/src/index.js",
+		"/E/react-playground/redux-simple-starter-middle/src/components/user-list.js",
+		"/E/react-playground/redux-simple-starter-middle/src/actions/index.js",
+		"/E/react-playground/redux-simple-starter-middle/style/style.css"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"ation",
+			"setting",
+			"static",
+			"x",
+			"Colour",
+			"shader",
+			"_shader",
+			"shader",
+			"ubyte",
+			"loadSource",
+			"vertSource",
+			"vertShader",
+			"program",
+			"vert",
+			"int",
+			"();",
+			"currentState",
+			"switch",
+			"game",
+			"Game",
+			"uvbo",
+			"vert",
+			"verts",
+			"uv",
+			"verts",
+			"vert",
+			"a",
+			"stdout",
+			"direction",
+			"right",
+			"glfwGetKey",
+			"() ",
+			"halfpi",
+			"fov",
+			"size",
+			"BMP",
+			"54",
+			"gvbo",
+			"  ,",
+			",-",
+			"uv",
+			"header.imageSize",
+			"writeln",
+			"data",
+			"bmpHeader",
+			"false",
+			"Header:",
+			"54",
+			"stingz",
+			"to",
+			"toStringz",
+			"vbo",
+			" $",
+			"toPrettyString",
+			"view",
+			"model",
+			"glClearColor",
+			"shader",
+			"vert",
+			"GL_TEXTURE_2D",
+			"GL_INVALID_OPERATION",
+			"glBindTexture",
+			"texture",
+			"id",
+			"LoadSource",
+			"CheckShader",
+			"ibo",
+			"fragTexture",
+			"program",
+			"shaderProgram",
+			"setx",
+			"export",
+			"setx",
+			"die",
+			";\n",
+			"get",
+			"    ",
+			"dist",
+			"0.75f",
+			"\t",
+			"exisiting",
+			"existingUser",
+			"email",
+			"bodyParser",
+			"http",
+			"ul",
+			"authenticate",
+			"div",
+			"onDubmit",
+			"onChange",
+			"div",
+			"const component = renderComponent(CommentBox);",
+			"3",
+			"has-danger",
+			"title",
+			"className=\"form-group\"",
+			"title",
+			"div",
+			"input",
+			"'",
+			"Temp",
+			"'",
+			"refLine=\"mean\"",
+			"height={120} width={180}",
+			"mean",
+			"<Sparklines />",
+			"cityData.city.name",
+			"class",
+			"'",
+			"onInputChange",
+			"false",
+			"evnt",
+			"position",
+			"this.rotation",
+			"rotation",
+			"x",
+			"BuildStructures",
+			"xDiff",
+			"halfDegPerChunk",
+			";\n",
+			"p",
+			"SplatCliffs",
+			"x",
+			"(x - 1)",
+			".terrain",
+			"terrian",
+			"td",
+			"terrainData"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			",",
+			", -",
+			"",
+			"\"",
+			"",
+			"\"\\1\": ",
+			"\"\\1\"",
+			"\"\\2\"",
+			"",
+			"\\\\\\\\",
+			"\\\\"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "DUB build debug",
+	"project": "d2d.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gam",
+				"source\\game.d"
+			],
+			[
+				"ap",
+				"source\\app.d"
+			],
+			[
+				"sdl",
+				"dub.sdl"
+			],
+			[
+				"fr",
+				"assets\\shaders\\core.frag"
+			],
+			[
+				"comment-box",
+				"redux-simple-starter-testing\\test\\components\\comment-box_test.js"
+			],
+			[
+				"comment",
+				"redux-simple-starter-testing\\src\\components\\comment-box.js"
+			],
+			[
+				"posts-n",
+				"redux-simple-starter-blog\\src\\components\\posts-new.js"
+			],
+			[
+				"char",
+				"redux-simple-starter-weather\\src\\components\\chart.js"
+			],
+			[
+				"app.js",
+				"redux-simple-starter-weather\\src\\components\\app.js"
+			],
+			[
+				"actioinde",
+				"redux-simple-starter\\src\\actions\\index.js"
+			],
+			[
+				"vid",
+				"redux-simple-starter\\src\\components\\video-detail.js"
+			],
+			[
+				"vi",
+				"redux-simple-starter\\src\\components\\video-list-item.js"
+			],
+			[
+				"inde",
+				"redux-simple-starter\\index.html"
+			],
+			[
+				"ind",
+				"redux-simple-starter\\index.html"
+			],
+			[
+				"packa",
+				"redux-simple-starter\\package.json"
+			],
+			[
+				"app",
+				"redux-simple-starter\\src\\components\\app.js"
+			],
+			[
+				"dyna",
+				"scripts\\DynamicTerrainChunk.cs"
+			],
+			[
+				"coord",
+				"scenes\\coord_test.unity"
+			],
+			[
+				"dyn",
+				"scripts\\DynamicTerrainChunk.cs"
+			],
+			[
+				"spher",
+				"scripts\\SphericalCoord.cs"
+			],
+			[
+				"d",
+				"DynamicTerrain.cs"
+			],
+			[
+				"src/ind",
+				"menu\\src\\index.js"
+			],
+			[
+				"logi",
+				"blogd-spaces\\views\\login.dt"
+			],
+			[
+				"inp",
+				"blogd-spaces\\docs\\input.html"
+			],
+			[
+				".dt",
+				"blogd-spaces\\views\\nav.dt"
+			],
+			[
+				"we",
+				"blogd-spaces\\source\\blogd\\web.d"
+			],
+			[
+				"web",
+				"blogd-spaces\\source\\blogd\\web.d"
+			],
+			[
+				"travis",
+				"blogd-spaces\\.travis.yml"
+			],
+			[
+				"yml",
+				"blogd-spaces\\.travis.yml"
+			],
+			[
+				"user_c",
+				"blogd-spaces\\views\\user_create.dt"
+			],
+			[
+				"user",
+				"blogd-spaces\\views\\user_create.dt"
+			],
+			[
+				"login",
+				"blogd-spaces\\views\\login.dt"
+			],
+			[
+				"tra",
+				"blogd-spaces\\.travis.yml"
+			],
+			[
+				"dub",
+				"blogd-spaces\\dub.json"
+			],
+			[
+				"nav",
+				"blogd-spaces\\views\\nav.dt"
+			],
+			[
+				"tes",
+				"blogd-spaces\\views\\test.dt"
+			],
+			[
+				"weba",
+				"blogd-spaces\\source\\blogd\\webapp.d"
+			],
+			[
+				"dub.jso",
+				"blogd-spaces\\dub.json"
+			],
+			[
+				"du",
+				"dub.json"
+			],
+			[
+				"bas",
+				"views\\base.dt"
+			],
+			[
+				"mai",
+				"public\\main.css"
+			],
+			[
+				"",
+				"public\\main.styl"
+			],
+			[
+				"use",
+				"views\\user_create.dt"
+			],
+			[
+				"log",
+				"views\\login.dt"
+			],
+			[
+				"na",
+				"views\\nav.dt"
+			],
+			[
+				"main",
+				"public\\main.styl"
+			],
+			[
+				"m",
+				"public\\main.styl"
+			],
+			[
+				"ba",
+				"views\\base.dt"
+			],
+			[
+				"ma",
+				"public\\main.styl"
+			],
+			[
+				"lo",
+				"views\\login.dt"
+			],
+			[
+				"cre",
+				"views\\user_create.dt"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"jos",
+				"dub.json"
+			],
+			[
+				"a",
+				"source\\app.d"
+			],
+			[
+				"cr",
+				"views\\user_create.dt"
+			],
+			[
+				"css",
+				"public\\main.css"
+			],
+			[
+				"test",
+				"views\\test.dt"
+			],
+			[
+				"us",
+				"source\\blogd\\userdata.d"
+			],
+			[
+				"in",
+				"views\\index.dt"
+			],
+			[
+				"te",
+				"views\\test.dt"
+			],
+			[
+				"dubj",
+				"blogd-spaces\\dub.json"
+			],
+			[
+				"read",
+				"blogd-spaces\\README.md"
+			],
+			[
+				"re",
+				"diet-ng\\README.md"
+			],
+			[
+				"giti",
+				"blogd-spaces\\.gitignore"
+			],
+			[
+				"mou",
+				"Assets\\MouseManager.cs"
+			],
+			[
+				"note.c",
+				"note\\public\\note.css"
+			],
+			[
+				"no",
+				"note\\note.exe"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "zom",
+		"selected_items":
+		[
+			[
+				"zom",
+				"E:\\games-d\\zombie\\zombie.sublime-project"
+			],
+			[
+				"",
+				"E:\\open-gl-playground\\opengl-tut\\opengl-tut.sublime-project"
+			],
+			[
+				"mode",
+				"E:\\open-gl-playground\\modern\\modern.sublime-project"
+			],
+			[
+				"rest",
+				"E:\\blogd-rest\\blogd-rest.sublime-project"
+			],
+			[
+				"pla",
+				"E:\\unity-playground\\planet-sim\\planet-sim.sublime-project"
+			],
+			[
+				"blo",
+				"E:\\blogd-spaces\\blogd-spaces.sublime-project"
+			],
+			[
+				"log",
+				"E:\\logd-html\\logd-html.sublime-project"
+			],
+			[
+				"sap",
+				"E:\\unity-playground\\space-cube\\space-cube.sublime-project"
+			],
+			[
+				"s",
+				"E:\\unity-playground\\space-cube\\space-cube.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 60.0,
+		"last_filter": "runApplication",
+		"selected_items":
+		[
+			[
+				"runApplication",
+				"runApplication"
+			],
+			[
+				"syn",
+				"vibe.core.sync"
+			],
+			[
+				"",
+				"NoteStore"
+			]
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
