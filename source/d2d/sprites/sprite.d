@@ -1,4 +1,4 @@
-module d2d.sprite;
+module d2d.sprites.sprite;
 
 import derelict.opengl3.gl3;
 

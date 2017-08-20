@@ -1,4 +1,4 @@
-module d2d.spritebatch;
+module d2d.sprites.batcher;
 
 import derelict.opengl3.gl3;
 import gl3n.linalg : vec4;
@@ -6,19 +6,22 @@ import gl3n.linalg : vec4;
 import d2d.colour;
 import d2d.constants;
 import d2d.settings;
+import d2d.sprites.batch;
+import d2d.sprites.glyph;
+import d2d.sprites.sort;
 import d2d.vertex;
 
 /**
-* SpriteBatch
+* Batcher
 */
-class SpriteBatch {
+class Batcher {
 	private {
 		uint _vbo;
 		uint _vao;
 		Glyph[] _glyphs;
 		Glyph* _data;
 		Batch[] _batches;
-		GlyphSort _sort;
+		Sort _sort;
 	}
 
 	this() {}
@@ -27,7 +30,7 @@ class SpriteBatch {
 		createVertexArray();
 	}
 
-	public void begin(GlyphSort sort = GlyphSort.Texture) {
+	public void begin(Sort sort = Sort.Texture) {
 		_sort = sort;
 		_batches.length = 0;
 		foreach(glyph; _glyphs) { Glyph.deallocate(glyph); }
@@ -113,7 +116,7 @@ class SpriteBatch {
 
 	private void sort() {
 		import std.algorithm : sort;
-		final switch(_sort) with(GlyphSort) {
+		final switch(_sort) with(Sort) {
 			case None:
 				break;
 
@@ -130,46 +133,4 @@ class SpriteBatch {
 				break;
 		}
 	}
-}
-
-struct Batch {
-	uint offset;
-	uint count;
-	uint texture;
-}
-
-class Glyph {
-	static private Glyph _freelist;
-	private Glyph _next;
-
-	static Glyph allocate() {
-		Glyph g;
-		if(_freelist) {
-			g = _freelist;
-			_freelist = g._next;
-		}
-		else {
-			g = new Glyph();
-		}
-		return g;
-	}
-
-	static void deallocate(Glyph g) {
-		g._next = _freelist;
-		_freelist = g;
-	}
-
-	uint texture;
-	float depth;
-	Vertex tl;
-	Vertex bl;
-	Vertex tr;
-	Vertex br;
-}
-
-enum GlyphSort {
-	  None
-	, Front
-	, Back
-	, Texture
 }
