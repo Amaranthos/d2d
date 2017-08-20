@@ -8,7 +8,7 @@ import gl3n.linalg : vec2;
 /**
 * Input
 */
-class Input {
+static class Input {
 	static private {
 		bool[uint] _keys;
 		bool[uint] _prevKeys;

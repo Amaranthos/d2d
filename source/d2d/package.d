@@ -13,6 +13,7 @@ public {
 	import d2d.debugging;
 	import d2d.errors;
 	import d2d.input;
+	import d2d.particles;
 	import d2d.resourcemanager;
 	import d2d.settings;
 	import d2d.shader;

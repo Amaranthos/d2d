@@ -5,7 +5,7 @@ import gl3n.linalg : vec4;
 /**
 * Constants
 */
-class Constants {
+static class Constants {
 	static {
 		public enum shaderPositionLoc = 0;
 		public enum shaderColourLoc = 1;

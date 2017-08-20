@@ -11,7 +11,7 @@ import d2d.debugging.profiler.iprofileroutputhandler;
 /**
 * Profiler
 */
-class Profiler {
+static class Profiler {
 	public static IProfilerOutputHandler outputHandler;
 
 	private {

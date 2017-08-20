@@ -7,7 +7,7 @@ import d2d.fontcache;
 * ResourceManager
 * TODO: Move to generic cache system ??
 */
-class ResourceManager {
+static class ResourceManager {
 	static private {
 		TextureCache _textureCache;
 		FontCache _fontCache;

@@ -5,7 +5,7 @@ import gl3n.linalg : vec4;
 /**
 * Settings
 */
-class Settings {
+static class Settings {
 	static {
 		public auto width = 1024;
 		public auto height = 768;
@@ -16,6 +16,8 @@ class Settings {
 		public auto cameraScale = 1.0f / 2.0f;
 		public auto profiling = true;
 		public auto numberAudioChannels = 100;
+		public auto maxParticles = 10000;
+		public auto muteAudio = true;
 
 		// TODO: move to module system
 		public auto entityRadius = 16;
