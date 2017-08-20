@@ -5,11 +5,12 @@ import d2d.fontcache;
 
 /**
 * ResourceManager
+* TODO: Move to generic cache system ??
 */
 class ResourceManager {
-	private {
-		static TextureCache _textureCache;
-		static FontCache _fontCache;
+	static private {
+		TextureCache _textureCache;
+		FontCache _fontCache;
 	}
 
 	static this() {
