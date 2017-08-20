@@ -15,6 +15,7 @@ class Settings {
 		public auto clearColour = vec4(0.6f, 0.6f, 0.6f, 1.0f);
 		public auto cameraScale = 1.0f / 2.0f;
 		public auto profiling = true;
+		public auto numberAudioChannels = 100;
 
 		// TODO: move to module system
 		public auto entityRadius = 16;

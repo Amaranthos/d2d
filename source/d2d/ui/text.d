@@ -49,7 +49,7 @@
 //		}
 //	}
 
-//	public void draw(SpriteBatch batch, in vec2 postion, in vec2 scaling, int depth = 0,  in Colour tint = Colour.black) {
+//	public void draw(Batcher batch, in vec2 postion, in vec2 scaling, int depth = 0,  in Colour tint = Colour.black) {
 //		auto dest = vec4(postion, vec2(_width, _height));
 //		//auto dest = vec4(postion, vec2(scaling.x * _width, scaling.y * _height));
 //		writeln("Pos: ", dest);

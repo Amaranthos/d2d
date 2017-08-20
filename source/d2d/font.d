@@ -216,7 +216,7 @@
 //		return size;
 //	}
 
-//	public void draw(SpriteBatch batch, in string text, vec2 postion, vec2 scaling, float depth, Colour tint = Colour.white, Justification justify = Justification.Left) {
+//	public void draw(Batcher batch, in string text, vec2 postion, vec2 scaling, float depth, Colour tint = Colour.white, Justification justify = Justification.Left) {
 //		auto tp = postion;
 
 //		final switch(justify) with (Justification) {

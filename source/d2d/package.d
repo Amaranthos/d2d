@@ -3,8 +3,10 @@ module d2d;
 import derelict.opengl3.gl3;
 import derelict.sdl2.sdl;
 import derelict.sdl2.ttf;
+import derelict.sdl2.mixer;
 
 public {
+	import d2d.audio;
 	import d2d.camera;
 	import d2d.colour;
 	import d2d.constants;
@@ -14,8 +16,7 @@ public {
 	import d2d.resourcemanager;
 	import d2d.settings;
 	import d2d.shader;
-	import d2d.sprite;
-	import d2d.spritebatch;
+	import d2d.sprites;
 	import d2d.templates;
 	import d2d.texture;
 	import d2d.timing;
@@ -34,7 +35,7 @@ public void init() {
 	DerelictGL3.load;
 	DerelictSDL2.load;
 	//DerelictSDL2Image.load;
-	//DerelictSDL2Mixer.load;
+	DerelictSDL2Mixer.load;
 	DerelictSDL2ttf.load;
 	//DerelictSDL2Net.load;
 
