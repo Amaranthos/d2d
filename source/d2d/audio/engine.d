@@ -33,6 +33,11 @@ static class AudioEngine {
 		}
 
 		Mix_AllocateChannels(Settings.numberAudioChannels);
+		if(Settings.muteAudio) {
+			foreach(i; 0..Settings.numberAudioChannels) {
+				Mix_Volume(i, 0);
+			}
+		}
 
 		isInit = true;
 	}
