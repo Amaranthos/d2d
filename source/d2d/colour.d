@@ -28,6 +28,10 @@ struct Colour {
 		return Colour(0, 0, 0, 255);
 	}
 
+	static Colour purple() @property {
+		return Colour(80, 0, 80, 255);
+	}
+
 	SDL_Color opCast(T : SDL_Color)() const {
 		return SDL_Color(r, g, b, a );
 	}
