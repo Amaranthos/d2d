@@ -1,4 +1,4 @@
-//module d2d.ui.text;
+module d2d.ui.text;
 
 //import std.stdio; // TODO: Remove dep
 //import std.conv : to;

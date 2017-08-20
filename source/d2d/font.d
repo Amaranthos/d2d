@@ -1,6 +1,6 @@
 // FIXME: Not working, porbably use a ui library instead
 
-//module d2d.font;
+module d2d.font;
 
 //import std.stdio;
 //import std.conv : to;
