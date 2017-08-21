@@ -27,7 +27,7 @@ static class Profiler {
 
 
 	public this(in string name) {
-		int newIndex = -1;
+		ulong newIndex = -1;
 
 		foreach(i, ref sample; samples) {
 			if(!sample.isValid) { newIndex = i; break; }
