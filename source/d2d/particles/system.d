@@ -10,6 +10,8 @@ import d2d.texture;
 import d2d.timing.delta;
 import d2d.sprites.batcher;
 
+alias ParticleUpdate = void delegate(ref Particle);
+
 /**
 * System
 */
@@ -21,13 +23,16 @@ class System {
 		float _size;
 		Texture _texutre;
 		int _index;
+		ParticleUpdate _update;
 	}
 
-	public this(int maxParticles, float decayRate, Texture texutre) {
+	public this(int maxParticles, float decayRate, Texture texutre, ParticleUpdate update = null) {
 		_decayRate = decayRate;
 		_texutre = texutre;
 		_maxParticles = maxParticles;
 		_particles = new Particle[maxParticles];
+
+		_update = update is null ? &defaultUpdate : update;
 
 		foreach(p; _particles) {
 			_particles[findFreeIndex()] = Particle();
@@ -44,16 +49,16 @@ class System {
 
 	public void update() {
 		foreach(ref p; _particles) {
-			if(p.lifetime > 0.0f) {
-				p.position = p.position + (p.velocity * DeltaTime.time);
-				p.lifetime = p.lifetime - (_decayRate * DeltaTime.time);
+			if(p.lifetime >= 0.0f) {
+				_update(p);
+				p.lifetime -= _decayRate * DeltaTime.time;
 			}
 		}
 	}
 
 	public void draw(Batcher batcher) {
 		foreach(p; _particles) {
-			if(p.lifetime > 0.0f) {
+			if(p.lifetime >= 0.0f) {
 				batcher.draw(vec4(p.position - vec2(p.size), vec2(p.size)), Constants.uvs, _texutre.id, 0.0f, p.colour);
 			}
 		}
@@ -61,19 +66,23 @@ class System {
 
 	private int findFreeIndex() {
 		foreach(i; _index.._maxParticles) {
-			if(_particles[i].lifetime <= 0f) {
+			if(_particles[i].lifetime < 0f) {
 				_index = i;
 				return i;
 			}
 		}
 
 		foreach(i; 0.._index) {
-			if(_particles[i].lifetime <= 0f) {
+			if(_particles[i].lifetime < 0f) {
 				_index = i;
 				return i;
 			}
 		}
 
 		return 0;
+	}
+
+	private void defaultUpdate(ref Particle p) {
+		p.position += p.velocity * DeltaTime.time;
 	}
 }
