@@ -1,6 +1,5 @@
 module d2d.debugging.profiler.profiler;
 
-import std.stdio;
 import std.string : format;
 
 import derelict.sdl2.sdl;
@@ -21,20 +20,19 @@ static class Profiler {
 		static float rootStart = 0f;
 		static float rootEnd = 0f;
 
-		int _index;
+		uint _index;
 		int _parentIndex = -1;
 	}
 
 
 	public this(in string name) {
-		ulong newIndex = -1;
+		uint newIndex = -1;
 
 		foreach(i, ref sample; samples) {
 			if(!sample.isValid) { newIndex = i; break; }
 			else {
 				if(sample.name == name) {
 					assert(!sample.isOpen, "Tried to profile a sample which is already open");
-					//writefln("i: %s, pi: %s, lastOpened: %s, numOpen: %s", i, _parentIndex, lastOpened, numOpen);
 					_index = i;
 					_parentIndex = lastOpened;
 					lastOpened = i;
@@ -43,7 +41,6 @@ static class Profiler {
 					sample.isOpen = true;
 					++sample.callCount;
 					sample.start = time();
-					//writefln("start: %s", sample.start);
 					if(_parentIndex < 0) { rootStart = sample.start; }
 					return;
 				}
@@ -69,7 +66,6 @@ static class Profiler {
 	}
 
 	public void stop() {
-		//writefln("i: %s, pi: %s, lastOpened: %s, numOpen: %s", _index, _parentIndex, lastOpened, numOpen);
 		// Timing complete
 		float end = time();
 		auto sample = &samples[_index];
@@ -77,17 +73,14 @@ static class Profiler {
 		float timeTaken = end - sample.start;
 
 		// Add time to parents
-		//writefln("_parentIndex: %s", _parentIndex);
 		if(_parentIndex >= 0) {
 			samples[_parentIndex].children += timeTaken;
-			//writefln("children: %s", samples[_parentIndex].children);
 		}
 		else { rootEnd = end; }
 
 		sample.total += timeTaken;
 		lastOpened = _parentIndex;
 		--numOpen;
-		//writefln("Stop: %s", *sample);
 	}
 
 	static public void output() {
@@ -95,21 +88,16 @@ static class Profiler {
 
 		outputHandler.begin;
 
-		//writefln("rStart: %s, rEnd: %s", rootStart, rootEnd);
 		foreach(i, ref sample; samples) {
 			if(sample.isValid) {
-				//writefln("%s, index: %s", sample, i);
 				double time, percentage;
 				time = sample.total - sample.children;
 				percentage = (time / (rootEnd - rootStart)) * 100f;
-
-				//writefln("time: %s, percentage: %s, e-s: %s", time, percentage, (rootEnd - rootStart));
 
 				auto total = sample.avg * sample.dataCount;
 				total += percentage;
 				++sample.dataCount;
 				sample.avg = total / sample.dataCount;
-				//writefln("total: %s", total);
 
 				if(sample.min == -1 || percentage < sample.min) { sample.min = percentage; }
 				if(sample.max == -1 || percentage > sample.max) { sample.max = percentage; }
@@ -120,7 +108,6 @@ static class Profiler {
 				sample.callCount = 0;
 				sample.total = 0f;
 				sample.children = 0f;
-				//writeln();
 			}
 		}
 		rootStart = 0f;
