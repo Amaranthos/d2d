@@ -1,6 +1,6 @@
 module d2d.constants;
 
-import gl3n.linalg : vec4;
+import gl3n.linalg : vec4, vec2;
 
 /**
 * Constants
@@ -17,5 +17,6 @@ static class Constants {
 		public enum milliseconds = 1000;
 		public enum maxProfilerSamples = 100;
 		public enum maxTextureRes = 4069;
+		public enum right = vec2(1f, 0f);
 	}
 }

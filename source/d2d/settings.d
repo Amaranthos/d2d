@@ -28,7 +28,7 @@ static class Settings {
 		public auto bulletRadius = 4;
 		public auto playerHp = 150;
 		public auto humanHp = 20;
-		public auto zombieHp = 150;
+		public auto zombieHp = 100;
 	}
 
 	enum VSync {

@@ -1,12 +1,14 @@
 module d2d.sprites.glyph;
 
+import gl3n.linalg : vec2;
+
 import d2d.vertex;
 
 class Glyph {
 	static private Glyph _freelist;
 	private Glyph _next;
 
-	static Glyph allocate() {
+	static public Glyph allocate() {
 		Glyph g;
 		if(_freelist) {
 			g = _freelist;
@@ -18,7 +20,7 @@ class Glyph {
 		return g;
 	}
 
-	static void deallocate(Glyph g) {
+	static public void deallocate(Glyph g) {
 		g._next = _freelist;
 		_freelist = g;
 	}

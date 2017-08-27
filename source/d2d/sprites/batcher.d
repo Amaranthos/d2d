@@ -1,7 +1,7 @@
 module d2d.sprites.batcher;
 
 import derelict.opengl3.gl3;
-import gl3n.linalg : vec4;
+import gl3n.linalg : vec4, vec2, dot;
 
 import d2d.colour;
 import d2d.constants;
@@ -42,7 +42,7 @@ class Batcher {
 		batch();
 	}
 
-	public void draw(vec4 rect, vec4 uvs, uint texture, float depth, Colour colour = Colour.white) {
+	public void draw(in vec4 rect, in vec4 uvs, in uint texture, in float depth, in Colour colour = Colour.white) {
 		auto glyph = Glyph.allocate();
 		glyph.texture = texture;
 		glyph.depth = depth;
@@ -53,6 +53,30 @@ class Batcher {
 		_glyphs ~= glyph;
 	}
 
+	public void draw(in vec4 rect, in vec4 uvs, in uint texture, in float depth, in float angle, in Colour colour = Colour.white) {
+		auto half = vec2(rect.z / 2f, rect.w / 2f);
+
+		auto tl = rotate(vec2(-half.x, half.y), angle);
+		auto bl = rotate(vec2(-half.x, -half.y), angle);
+		auto br = rotate(vec2(half.x, -half.y), angle);
+		auto tr = rotate(vec2(half.x, half.y), angle);
+
+		auto glyph = Glyph.allocate();
+		glyph.texture = texture;
+		glyph.depth = depth;
+		glyph.tl = Vertex([rect.x + tl.x, rect.y + tl.y], colour, [uvs.x, uvs.y + uvs.w]);
+		glyph.bl = Vertex([rect.x + bl.x, rect.y + bl.y], colour, [uvs.x, uvs.y]);
+		glyph.br = Vertex([rect.x + br.x, rect.y + br.y], colour, [uvs.x + uvs.z, uvs.y]);
+		glyph.tr = Vertex([rect.x + tr.x, rect.y + tr.y], colour, [uvs.x + uvs.z, uvs.y + uvs.w]);
+		_glyphs ~= glyph;
+	}
+
+	public void draw(in vec4 rect, in vec4 uvs, in uint texture, in float depth, in vec2 direction, in Colour colour = Colour.white) {
+		import std.math : acos;
+		float angle = acos(dot(Constants.right, direction));
+		if(direction.y < 0.0f) { angle = -angle; }
+		draw(rect, uvs, texture, depth, angle, colour);
+	}
 	public void render() {
 		glBindVertexArray(_vao);
 		foreach(batch; _batches) {
@@ -132,5 +156,10 @@ class Batcher {
 				_glyphs.sort!((a, b) => a.texture < b.texture);
 				break;
 		}
+	}
+
+	private vec2 rotate(vec2 point, float angle) {
+		import std.math : sin, cos;
+		return(vec2(point.x * cos(angle) - point.y * sin(angle), point.x * sin(angle) + point.y * cos(angle)));
 	}
 }
