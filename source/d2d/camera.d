@@ -1,6 +1,6 @@
 module d2d.camera;
 
-import gl3n.linalg : mat4, vec3, vec2;
+import gl3n.linalg : mat4, vec3, vec2, vec4;
 
 /**
 * Camera
@@ -37,6 +37,17 @@ class Camera {
 
 	public vec2 screenToWorld(in vec2 screen) {
 		return (screen - vec2(0.5f * _width, 0.5f * _height)) + _position;
+	}
+
+	public bool isInView(in vec4 rect) {
+		auto halfScaledW = 0.5f * _width / _zoom;
+		auto halfScaledH = 0.5f * _height / _zoom;
+
+		return( rect.x < _position.x + halfScaledW
+			&& rect.x + rect.z > _position.x - halfScaledW
+			&& rect.y < _position.y + halfScaledH
+			&& rect.y + rect.w  > _position.y - halfScaledH
+		);
 	}
 
 	public void position(in vec2 position) @property { _position = position; _dirty = true; }

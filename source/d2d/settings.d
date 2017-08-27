@@ -14,12 +14,13 @@ static class Settings {
 		public auto printFPS = false;
 		public auto clearColour = vec4(0.6f, 0.6f, 0.6f, 1.0f);
 		public auto cameraScale = 1.0f / 2.0f;
-		public auto profiling = true;
 		public auto numberAudioChannels = 100;
 		public auto maxParticles = 10000;
+		public auto profiling = true;
 		public auto muteAudio = true;
 
 		// TODO: move to module system
+		public auto map = "assets/maps/level0.map";
 		public auto entityRadius = 16;
 		public auto playerMoveSpeed = 8f;
 		public auto humanMoveSpeed = 1.3f;
