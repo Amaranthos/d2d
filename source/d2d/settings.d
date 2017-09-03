@@ -18,6 +18,11 @@ static class Settings {
 		public auto maxParticles = 10000;
 		public auto profiling = true;
 		public auto muteAudio = true;
+		public auto windowName = "Hello, world....";
+		public auto escapeExits = true;
+
+		// Spatial Partitioning
+		public auto gridCellSize = 128;
 
 		// TODO: move to module system
 		public auto map = "assets/maps/level0.map";

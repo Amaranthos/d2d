@@ -13,10 +13,12 @@ public {
 	import d2d.debugging;
 	import d2d.errors;
 	import d2d.input;
+	import d2d.kernal;
 	import d2d.particles;
 	import d2d.resourcemanager;
 	import d2d.settings;
 	import d2d.shader;
+	import d2d.spatial;
 	import d2d.sprites;
 	import d2d.templates;
 	import d2d.texture;
@@ -24,6 +26,7 @@ public {
 	import d2d.texturecache;
 	import d2d.ui;
 	import d2d.vertex;
+	import d2d.views;
 	import d2d.window;
 }
 
@@ -43,6 +46,7 @@ public void init() {
 	SDL_Init(SDL_INIT_EVERYTHING);
 	TTF_Init();
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
 }
 
 public void quit() {
