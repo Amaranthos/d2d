@@ -47,7 +47,7 @@ class List {
 	* add
 	*/
 	public void add(View view) {
-		view.build(_kernal, _views.length);
+		view.build(_kernal, cast(int)_views.length);
 		_views ~= view;
 	}
 
@@ -62,7 +62,6 @@ class List {
 	* current
 	*/
 	public void current(int index) {
-		writefln("Curr: %s, new: %s", _current, index);
 		_current = index;
 	}
 }
