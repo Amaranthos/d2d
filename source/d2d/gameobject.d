@@ -7,8 +7,23 @@ import d2d.components;
 */
 class GameObject {
 	private {
+		//Transform _transform;
 		Component[] _components;
 	}
 
 	this() {}
+
+	/**
+	* AddComponent
+	*/
+	public void AddComponent(Component comp) {
+		_components ~= comp;
+	}
+
+	/**
+	* GetComponent(T)
+	*/
+	public T GetComponent(T)() {
+
+	}
 }
