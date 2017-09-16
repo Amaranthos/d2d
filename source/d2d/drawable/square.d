@@ -14,4 +14,11 @@ class Square : IShape {
 	}
 
 	this() {}
+
+	/**
+	* draw
+	*/
+	public void draw() {
+
+	}
 }

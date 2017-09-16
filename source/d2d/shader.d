@@ -6,6 +6,7 @@ import d2d.errors;
 
 /**
 * Shader
+* TODO: Change this up so that a string containging the shader can be passed in
 */
 class Shader {
 	private {
@@ -18,26 +19,42 @@ class Shader {
 		glDeleteProgram(_program);
 	}
 
-	public void compile(in string vertPath, in string fragPath) {
-		void checkProgam(in uint program) {
-			import std.string : format;
-
-			int result, len;
-			glGetProgramiv(program, GL_LINK_STATUS, &result);
-			if(!result) {
-				glGetProgramiv(program, GL_INFO_LOG_LENGTH, &len);
-				char[] infoLog = new char[len];
-				glGetShaderInfoLog(program, 512, null, infoLog.ptr);
-				fatalError(format("Shader program compliation failed: %s", infoLog));
-			}
-		}
+	/**
+	* compileShaders
+	*/
+	public void compile(in string vertSrc, in string fragSrc) {
+		import std.string : toStringz;
 
 		auto vertShader = glCreateShader(GL_VERTEX_SHADER);
-		compileShader(vertPath, vertShader);
+		compileShader(vertSrc.toStringz, vertShader);
 
 		auto fragShader = glCreateShader(GL_FRAGMENT_SHADER);
-		compileShader(fragPath, fragShader);
+		compileShader(fragSrc.toStringz, fragShader);
 
+		createProgram(vertShader, fragShader);
+	}
+
+	/**
+	* loadShaders
+	*/
+	public void load(in string vertPath, in string fragPath) {
+		import std.string : toStringz;
+
+		auto vertShader = glCreateShader(GL_VERTEX_SHADER);
+		auto vertSrc = loadShader(vertPath).toStringz;
+		compileShader(vertSrc, vertShader);
+
+		auto fragShader = glCreateShader(GL_FRAGMENT_SHADER);
+		auto fragSrc = loadShader(fragPath).toStringz;
+		compileShader(fragSrc, fragShader);
+
+		createProgram(vertShader, fragShader);
+	}
+
+	/**
+	* createProgram
+	*/
+	private void createProgram(in uint vertShader, in uint fragShader) {
 		_program = glCreateProgram();
 		glAttachShader(_program, vertShader);
 		glAttachShader(_program, fragShader);
@@ -48,35 +65,54 @@ class Shader {
 		glDeleteShader(fragShader);
 	}
 
-	private void compileShader(in string path, in uint shader) {
-		import std.string : toStringz;
+	/**
+	* checkProgam
+	*/
+	private void checkProgam(in uint program) {
+		import std.string : format;
 
-		void checkShader(in uint shader) {
-			import std.string : format;
-
-			int result, len;
-			glGetShaderiv(shader, GL_COMPILE_STATUS, &result);
-			if(!result) {
-				glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &len);
-				char[] infoLog = new char[len];
-				glGetShaderInfoLog(shader, 512, null, infoLog.ptr);
-				fatalError(format("Shader compliation failed: %s", infoLog));
-			}
+		int result, len;
+		glGetProgramiv(program, GL_LINK_STATUS, &result);
+		if(!result) {
+			glGetProgramiv(program, GL_INFO_LOG_LENGTH, &len);
+			char[] infoLog = new char[len];
+			glGetShaderInfoLog(program, 512, null, infoLog.ptr);
+			fatalError(format("Shader program compliation failed: %s", infoLog));
 		}
+	}
 
-		auto src = loadSource(path).toStringz;
+	/**
+	* compileShader
+	*/
+	private void compileShader(in char* src, in uint shader) {
 		glShaderSource(shader, 1, &src, null);
 		glCompileShader(shader);
 		checkShader(shader);
 	}
 
-	private string loadSource(in string path) {
+	/**
+	* loadShader
+	*/
+	private string loadShader(in string path) {
 		import std.file : exists, readText;
 
 		string source;
 		if(path.exists) { source = path.readText; }
 		else { fatalError("Error reading file: " ~ path ~ " does not exist"); }
 		return source;
+	}
+
+	private void checkShader(in uint shader) {
+		import std.string : format;
+
+		int result, len;
+		glGetShaderiv(shader, GL_COMPILE_STATUS, &result);
+		if(!result) {
+			glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &len);
+			char[] infoLog = new char[len];
+			glGetShaderInfoLog(shader, 512, null, infoLog.ptr);
+			fatalError(format("Shader compliation failed: %s", infoLog));
+		}
 	}
 
 	public void use() const {

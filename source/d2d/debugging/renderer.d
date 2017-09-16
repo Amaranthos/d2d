@@ -19,7 +19,19 @@ class Renderer {
 	}
 
 	this() {
-		glGenVertexArray(1, &_vao);
+		//_shader
+
+		glGenVertexArrays(1, &_vao);
+		glGenBuffers(1, &_vbo);
+		glGenBuffers(1, &_ibo);
+
+		glBindVertexArray(_vao);
+		glBindBuffer(GL_ARRAY_BUFFER, _vbo);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ibo);
+
+
+
+		glBindVertexArray(0);
 	}
 
 	~this() {
