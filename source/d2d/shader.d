@@ -43,6 +43,21 @@ class Shader {
 		compile(vertSrc, fragSrc);
 	}
 
+	public void use() const {
+		glUseProgram(_program);
+	}
+
+	public void unuse() const {
+		glUseProgram(0);
+	}
+
+	public int getUniform(in string name) {
+		import std.string : toStringz;
+		auto loc = glGetUniformLocation(_program, name.toStringz);
+		if(loc == GL_INVALID_INDEX) { fatalError("Uniform " ~ name ~ " not found"); }
+		return loc;
+	}
+
 	/**
 	* createProgram
 	*/
@@ -105,21 +120,6 @@ class Shader {
 			glGetShaderInfoLog(shader, 512, null, infoLog.ptr);
 			fatalError(format("Shader compliation failed: %s", infoLog));
 		}
-	}
-
-	public void use() const {
-		glUseProgram(_program);
-	}
-
-	public void unuse() const {
-		glUseProgram(0);
-	}
-
-	public int getUniform(in string name) {
-		import std.string : toStringz;
-		auto loc = glGetUniformLocation(_program, name.toStringz);
-		if(loc == GL_INVALID_INDEX) { fatalError("Uniform " ~ name ~ " not found"); }
-		return loc;
 	}
 
 	public uint program() const @property { return _program; }
