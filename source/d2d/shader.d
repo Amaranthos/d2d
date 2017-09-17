@@ -38,17 +38,9 @@ class Shader {
 	* loadShaders
 	*/
 	public void load(in string vertPath, in string fragPath) {
-		import std.string : toStringz;
-
-		auto vertShader = glCreateShader(GL_VERTEX_SHADER);
-		auto vertSrc = loadShader(vertPath).toStringz;
-		compileShader(vertSrc, vertShader);
-
-		auto fragShader = glCreateShader(GL_FRAGMENT_SHADER);
-		auto fragSrc = loadShader(fragPath).toStringz;
-		compileShader(fragSrc, fragShader);
-
-		createProgram(vertShader, fragShader);
+		auto vertSrc = loadShader(vertPath);
+		auto fragSrc = loadShader(fragPath);
+		compile(vertSrc, fragSrc);
 	}
 
 	/**
