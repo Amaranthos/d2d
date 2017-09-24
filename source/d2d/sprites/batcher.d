@@ -3,13 +3,14 @@ module d2d.sprites.batcher;
 import derelict.opengl3.gl3;
 import gl3n.linalg : vec4, vec2, dot;
 
+import d2d : rotate;
 import d2d.colour;
 import d2d.constants;
 import d2d.settings;
 import d2d.sprites.batch;
 import d2d.sprites.glyph;
 import d2d.sprites.sort;
-import d2d.vertex;
+import d2d.sprites.vertex;
 
 /**
 * Batcher
@@ -55,11 +56,10 @@ class Batcher {
 
 	public void draw(in vec4 rect, in vec4 uvs, in uint texture, in float depth, in float angle, in Colour colour = Colour.white) {
 		auto half = vec2(rect.z / 2f, rect.w / 2f);
-
-		auto tl = rotate(vec2(-half.x, half.y), angle);
-		auto bl = rotate(vec2(-half.x, -half.y), angle);
-		auto br = rotate(vec2(half.x, -half.y), angle);
-		auto tr = rotate(vec2(half.x, half.y), angle);
+		auto tl = rotate(vec2(-half.x, half.y), angle, true);
+		auto bl = rotate(vec2(-half.x, -half.y), angle, true);
+		auto br = rotate(vec2(half.x, -half.y), angle, true);
+		auto tr = rotate(vec2(half.x, half.y), angle, true);
 
 		auto glyph = Glyph.allocate();
 		glyph.texture = texture;
@@ -156,10 +156,5 @@ class Batcher {
 				_glyphs.sort!((a, b) => a.texture < b.texture);
 				break;
 		}
-	}
-
-	private vec2 rotate(vec2 point, float angle) {
-		import std.math : sin, cos;
-		return(vec2(point.x * cos(angle) - point.y * sin(angle), point.x * sin(angle) + point.y * cos(angle)));
 	}
 }

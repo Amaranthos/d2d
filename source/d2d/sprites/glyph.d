@@ -2,7 +2,7 @@ module d2d.sprites.glyph;
 
 import gl3n.linalg : vec2;
 
-import d2d.vertex;
+import d2d.sprites.vertex;
 
 class Glyph {
 	static private Glyph _freelist;

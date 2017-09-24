@@ -6,8 +6,8 @@ import d2d.colour;
 import d2d.constants;
 import d2d.resourcemanager;
 import d2d.settings;
+import d2d.sprites.vertex;
 import d2d.texture;
-import d2d.vertex;
 
 /**
 * Sprite

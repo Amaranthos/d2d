@@ -16,7 +16,7 @@ class Shader {
 	public this() {}
 
 	public ~this() {
-		glDeleteProgram(_program);
+		if(_program) { glDeleteProgram(_program); }
 	}
 
 	/**

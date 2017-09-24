@@ -20,6 +20,7 @@ static class Settings {
 		public auto muteAudio = true;
 		public auto windowName = "Hello, world....";
 		public auto escapeExits = true;
+		public auto debugRendering = true;
 
 		// Spatial Partitioning
 		public auto gridCellSize = 128;
