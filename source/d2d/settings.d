@@ -13,7 +13,7 @@ static class Settings {
 		public auto vsync = VSync.Disabled;
 		public auto printFPS = false;
 		public auto clearColour = vec4(0.6f, 0.6f, 0.6f, 1.0f);
-		public auto cameraScale = 1.0f / 2.0f;
+		public auto cameraScale = 1.0f / 1.25f;
 		public auto numberAudioChannels = 100;
 		public auto maxParticles = 10000;
 		public auto profiling = true;
