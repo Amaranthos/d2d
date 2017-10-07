@@ -26,7 +26,7 @@ class Light {
 		dest.y = _position.y - _radius;
 		dest.z = 2 * _radius;
 		dest.w = 2 * _radius;
-		batch.draw(dest, vec4(-1, -1, 2, 2), 0, 0f);
+		batch.draw(dest, vec4(-1f, -1f, 2f, 2f), 0, 0f);
 	}
 
 	public vec2 position() const @property { return _position; }
