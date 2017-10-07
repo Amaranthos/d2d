@@ -22,11 +22,11 @@ class Circle : IShape {
 	/**
 	* draw
 	*/
-	public void draw(ref Vertex[] verts, ref uint[] indices) {
+	public void draw(ref Vertex[] verts, ref ulong[] indices) {
 		import std.math : cos, sin, PI;
 
 		enum numVerts = 100;
-		int index = verts.length;
+		auto index = verts.length;
 		foreach(i; 0..numVerts) {
 			float angle = (i / cast(float)numVerts * 2 * PI);
 			verts ~= Vertex(vec2(x + cos(angle) * radius, y + sin(angle) * radius), colour);

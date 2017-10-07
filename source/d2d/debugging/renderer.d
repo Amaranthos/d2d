@@ -16,9 +16,9 @@ class Renderer {
 	private {
 		Shader _shader;
 		Vertex[] _vertices;
-		uint[] _indices;
+		ulong[] _indices;
 		uint _vbo, _vao, _ibo;
-		uint _count;
+		ulong _count;
 	}
 
 	this() {
@@ -60,8 +60,8 @@ class Renderer {
 
 		//Indices
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _ibo);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, _indices.length * uint.sizeof, null, GL_DYNAMIC_DRAW);
-		glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, _indices.length * uint.sizeof, _indices.ptr);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, _indices.length * ulong.sizeof, null, GL_DYNAMIC_DRAW);
+		glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, _indices.length * ulong.sizeof, _indices.ptr);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
 		_count = _indices.length;
@@ -84,7 +84,7 @@ class Renderer {
 
 		glLineWidth(lineWidth);
 		glBindVertexArray(_vao);
-		glDrawElements(GL_LINES, _count, GL_UNSIGNED_INT, null);
+		glDrawElements(GL_LINES, cast(int)_count, GL_UNSIGNED_INT, null);
 		glBindVertexArray(0);
 
 		_shader.unuse;
