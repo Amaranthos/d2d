@@ -20,7 +20,7 @@ static class Constants {
 		public enum right = vec2(1f, 0f);
 
 		// TODO: Move to default shaders class?
-		public enum defaultSpritVertSrc =
+		public enum defaultSpriteVertSrc =
 		`#version 410
 
 		layout(location = 0) in vec2 position;
@@ -83,7 +83,7 @@ static class Constants {
 
 		void main() {
 			float distance = length(fragUV);
-			colour = vec4(fragColour.rgb, fragColour.a * (1.0 - distance);
+			colour = vec4(fragColour.rgb, fragColour.a * (1.0 - distance));
 		}
 		`;
 	}
