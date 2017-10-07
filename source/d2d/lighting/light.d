@@ -28,4 +28,12 @@ class Light {
 		dest.w = 2 * _radius;
 		batch.draw(dest, vec4(-1, -1, 2, 2), 0, 0f);
 	}
+
+	public vec2 position() const @property { return _position; }
+	public float radius() const @property { return _radius; }
+	public Colour colour() const @property { return _colour; }
+
+	public void position(vec2 value) @property { _position = value; }
+	public void radius(float value) @property { _radius = value; }
+	public void colour(Colour value) @property { _colour = value; }
 }
