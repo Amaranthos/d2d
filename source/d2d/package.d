@@ -14,6 +14,7 @@ public {
 	import d2d.drawable;
 	import d2d.errors;
 	import d2d.input;
+	import d2d.lighting;
 	import d2d.kernal;
 	import d2d.particles;
 	import d2d.resourcemanager;
