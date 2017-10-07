@@ -3,6 +3,7 @@ module d2d.animation.tilesheet;
 import gl3n.linalg;
 
 import d2d.texture;
+import d2d.resourcemanager;
 
 /**
 * TileSheet
@@ -18,8 +19,8 @@ class TileSheet {
 	/**
 	* init
 	*/
-	public void init(in Texture texture, in int tileWidth, in int tileHeight) {
-		_texture = texture;
+	public void init(in string texturePath, in int tileWidth, in int tileHeight) {
+		_texture =  ResourceManager.textureCache.get(texturePath);
 		_tileWidth = tileWidth;
 		_tileHeight = tileHeight;
 	}
