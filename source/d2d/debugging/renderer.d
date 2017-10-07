@@ -64,7 +64,7 @@ class Renderer {
 		glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, _indices.length * uint.sizeof, _indices.ptr);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
-		_count = _indices.length;
+		_count = cast(int)_indices.length;
 		_indices.length = 0;
 		_vertices.length = 0;
 	}

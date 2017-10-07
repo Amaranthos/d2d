@@ -26,7 +26,7 @@ class Circle : IShape {
 		import std.math : cos, sin, PI;
 
 		enum numVerts = 100;
-		int index = verts.length;
+		int index = cast(int)verts.length;
 		foreach(i; 0..numVerts) {
 			float angle = (i / cast(float)numVerts * 2 * PI);
 			verts ~= Vertex(vec2(x + cos(angle) * radius, y + sin(angle) * radius), colour);

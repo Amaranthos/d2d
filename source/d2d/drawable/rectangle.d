@@ -23,7 +23,7 @@ class Rectangle : IShape {
 	* draw
 	*/
 	public void draw(ref Vertex[] verts, ref uint[] indices) {
-		int index = verts.length;
+		int index = cast(int)verts.length;
 
 		auto half = vec2(width / 2f, height / 2f);
 		auto tl = rotate(vec2(-half.x, half.y), angle, true);
