@@ -6,21 +6,21 @@ import gl3n.linalg : vec4, vec2;
 * Constants
 */
 static class Constants {
-	static {
-		public enum shaderPositionLoc = 0;
-		public enum shaderColourLoc = 1;
-		public enum shaderUVLoc = 2;
-		public enum countVerts = 6;
-		public enum framerateSamples = 10;
-		public enum tileSize = 64;
-		public enum uvs = vec4(0f, 0f, 1f, 1f);
-		public enum milliseconds = 1000;
-		public enum maxProfilerSamples = 100;
-		public enum maxTextureRes = 4069;
-		public enum right = vec2(1f, 0f);
+	static public {
+		enum shaderPositionLoc = 0;
+		enum shaderColourLoc = 1;
+		enum shaderUVLoc = 2;
+		enum countVerts = 6;
+		enum framerateSamples = 10;
+		enum tileSize = 64;
+		enum uvs = vec4(0f, 0f, 1f, 1f);
+		enum milliseconds = 1000;
+		enum maxProfilerSamples = 100;
+		enum maxTextureRes = 4069;
+		enum right = vec2(1f, 0f);
 
 		// TODO: Move to default shaders class?
-		public enum defaultSpriteVertSrc =
+		enum defaultSpriteVertSrc =
 		`#version 410
 
 		layout(location = 0) in vec2 position;
@@ -39,7 +39,7 @@ static class Constants {
 		}
 		`;
 
-		public enum defaultSpriteFragSrc =
+		enum defaultSpriteFragSrc =
 		`#version 410
 
 		in vec4 fragColour;
@@ -54,7 +54,7 @@ static class Constants {
 		}
 		`;
 
-		public enum defaultLightVertSrc =
+		enum defaultLightVertSrc =
 		`#version 410
 
 		layout(location = 0) in vec2 position;
@@ -73,7 +73,7 @@ static class Constants {
 		}
 		`;
 
-		public enum defaultLightFragSrc =
+		enum defaultLightFragSrc =
 		`#version 410
 
 		in vec4 fragColour;
