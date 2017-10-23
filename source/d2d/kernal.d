@@ -110,7 +110,7 @@ abstract class Kernal {
 	private void init() {
 		d2d.init;
 
-		_window.create(Settings.windowName, Settings.width, Settings.height);
+		_window.create(Config.window.title, Config.window.width, Config.window.height);
 		_viewList = new List(this);
 
 		AudioEngine.init;
@@ -160,7 +160,7 @@ abstract class Kernal {
 			}
 		}
 
-		if(Settings.escapeExits && Input.get(SDLK_ESCAPE)) { _currentState = AppState.Exit; }
+		if(Config.debugging.escapeExits && Input.get(SDLK_ESCAPE)) { _currentState = AppState.Exit; }
 	}
 
 	public void currentState(AppState value) @property { _currentState = value; }

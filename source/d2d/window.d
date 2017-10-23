@@ -3,8 +3,8 @@ module d2d.window;
 import derelict.sdl2.sdl;
 import derelict.opengl3.gl3;
 
+import d2d.configuration;
 import d2d.errors;
-import d2d.settings;
 
 /**
 * Window
@@ -22,6 +22,8 @@ class Window {
 		assert(_window !is null);
 	}
 	body {
+		import std.string : toStringz;
+
 		_width = width;
 		_height = height;
 
@@ -30,7 +32,7 @@ class Window {
 		if(flags & Flags.Borderless) { sdlFlags |= SDL_WINDOW_BORDERLESS; }
 		if(flags & Flags.Resizable) { sdlFlags |= SDL_WINDOW_RESIZABLE; }
 
-		_window = SDL_CreateWindow(name.ptr, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, _width, _height, sdlFlags);
+		_window = SDL_CreateWindow(name.toStringz, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, _width, _height, sdlFlags);
 		if(_window is null) {
 			fatalError("SDL Window was not created");
 		}
@@ -42,8 +44,7 @@ class Window {
 
 		DerelictGL3.reload;
 
-		glClearColor(Settings.clearColour.r, Settings.clearColour.g, Settings.clearColour.b, Settings.clearColour.a);
-		SDL_GL_SetSwapInterval(Settings.vsync);
+		SDL_GL_SetSwapInterval(Config.render.vsync);
 
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

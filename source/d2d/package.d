@@ -9,6 +9,7 @@ public {
 	import d2d.audio;
 	import d2d.camera;
 	import d2d.colour;
+	import d2d.configuration;
 	import d2d.constants;
 	import d2d.debugging;
 	import d2d.drawable;

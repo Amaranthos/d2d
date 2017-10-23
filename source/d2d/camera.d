@@ -11,10 +11,11 @@ class Camera {
 		bool _dirty = true;
 		vec2 _position = vec2(0f);
 		mat4 _mvp = mat4(1f);
-		float _zoom = 1f;
+		float _zoom = 1.0f / 1.25f; //1f;
 		int _width;
 		int _height;
 	}
+
 	static Camera _inst;
 
 	public this() {

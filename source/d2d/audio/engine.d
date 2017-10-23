@@ -6,8 +6,8 @@ import derelict.sdl2.mixer;
 
 import d2d.audio.music;
 import d2d.audio.soundeffect;
+import d2d.configuration;
 import d2d.errors;
-import d2d.settings;
 
 /**
 * AudioEngine
@@ -32,9 +32,9 @@ static class AudioEngine {
 			fatalError(format("Mix_Init error: %s", Mix_GetError().fromStringz));
 		}
 
-		Mix_AllocateChannels(Settings.numberAudioChannels);
-		if(Settings.muteAudio) {
-			foreach(i; 0..Settings.numberAudioChannels) {
+		Mix_AllocateChannels(Config.audio.channels);
+		if(Config.audio.mute) {
+			foreach(i; 0..Config.audio.channels) {
 				Mix_Volume(i, 0);
 			}
 		}

@@ -4,7 +4,10 @@ authors "Joshua Hodkinson"
 copyright "Copyright © 2017, Joshua Hodkinson"
 license "MIT"
 
+targetType "library"
 targetPath "bin"
+
+dependency "d-json" version="~master"
 
 dependency "derelict-gl3" version="~>1.0.23"
 dependency "derelict-sdl2" version="~>2.1.4"

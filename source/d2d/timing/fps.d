@@ -2,8 +2,8 @@ module d2d.timing.fps;
 
 import derelict.sdl2.sdl;
 
+import d2d.configuration;
 import d2d.constants;
-import d2d.settings;
 
 /**
 * FPSLimiter
@@ -26,13 +26,13 @@ class FPSLimiter {
 	public void end() {
 		calc();
 		float ticks = SDL_GetTicks() - _start;
-		if(1000f / Settings.maxFPS > ticks) {
-			SDL_Delay(cast(uint)(1000f / Settings.maxFPS - ticks));
+		if(1000f / Config.render.maxFps > ticks) {
+			SDL_Delay(cast(uint)(1000f / Config.render.maxFps - ticks));
 		}
 	}
 
 	public void print() {
-		if(!Settings.printFPS) { return; }
+		if(!Config.debugging.printFps) { return; }
 
 		if(_frame % Constants.framerateSamples == 0) {
 			// TODO: Logger
